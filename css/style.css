@@ -1,0 +1,138 @@
+*,
+*::brfore,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+.row{
+	width: 50px;
+	height: 50px;
+	background:red;
+	position: relative;
+	top: 20%;
+	left: 50%;
+	transition: all 1s ease;
+	animation:animation 10s ease forwards inherit;
+}
+
+/* 
+.row:hover{
+	width: 200px;
+color:red
+}
+@keyframes animation{
+	0%{
+		left: 0;
+		top: 0;
+		background:green;
+	}
+	25% {
+		left: 60%;
+		top: 0;
+		background:blue;
+	}
+	50% {
+		left: 70%;
+		top: 400px;
+		background:gold;
+	}
+	75% {
+		left: 0%;
+		top: 400px;
+		background:red;
+	}
+	100% {
+
+		left: 10%;
+		top:10%;
+		background:black;
+	}
+}
+	/* form{
+	width: 10px;
+	transform:transparent(0 0)
+	}
+	to{
+	width: 100px;
+	transform:transparent(100px 200px)
+	} */ 
+
+
+
+span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 46px;
+	height: 46px;
+	border: 2px solid blue;
+	animation:loader 2s ease forwards infinite;
+}
+@keyframes loader{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg)
+	}
+}
+
+span:nth-last-of-type(1){
+	animation:span1 2s forwards infinite alternate-reverse;  ;
+}
+@keyframes span1{
+	form{
+		transform: translate(0);
+	}
+	to{
+		transform: translate(0 ,50px)
+	}
+}
+span:nth-last-of-type(2) {
+	animation: span2 2s forwards infinite alternate-reverse;
+}
+
+@keyframes span1 {
+	form {
+		transform: translate(0);
+	}
+
+	to {
+		transform: translate(0, -50px)
+	}
+}
+
+span:nth-last-of-type(3) {
+	animation: span3 2s forwards infinite alternate-reverse;
+}
+
+@keyframes span3 {
+	form {
+		transform: translate(0);
+	}
+
+	to {
+		transform: translate(50px, 0)
+	}
+}
+span:nth-last-of-type(4) {
+	animation: span4 2s forwards infinite alternate-reverse;
+}
+
+@keyframes span4 {
+	form {
+		transform: translate(0);
+	}
+
+	to {
+		transform: translate(-50px,0)
+	}
+}
