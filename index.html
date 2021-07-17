@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,7 +63,7 @@
 						</tr>
 					</thead>
 
-					<tr>
+					<tr id="1">
 						<td>1</td>
 						<td>Weber Белый 105	</td>
 						<td>89 000 сўм</td>
@@ -73,7 +73,7 @@
 						<td>Кг</td>
 						<td></td>
 					</tr>
-					<tr>
+					<tr id="2">
 						<td>2</td>
 						<td>Weber Красный 107</td>
 						<td>95 000 сўм</td>
@@ -83,7 +83,7 @@
 						<td>Кг</td>
 						<td></td>
 					</tr>
-					<tr>
+					<tr id="3">
 						<td>3</td>
 						<td>Weber Черный 105</td>
 						<td>83 000 сўм</td>
@@ -93,7 +93,7 @@
 						<td>Кг</td>
 						<td></td>
 					</tr>
-					<tr>
+					<tr id="4">
 						<td>4</td>
 						<td>Weber Малочный 105</td>
 						<td>80 000 сўм</td>
@@ -105,8 +105,6 @@
 					</tr>
 				</tbody>
 			</table>
-			<button class="ok" style="align:center; width: 50px; height: 50px;" >ok</button>
-
 
 
 			<div class="modal-hidden" id="myModal">
@@ -119,7 +117,7 @@
 					</div>
 					<div class="modal-content">
 						<div class="modal-container">
-							<h3>НЕОЛИТ КРИСТАЛЬНО БЕЛАЯ (ГЛЯНЦЕВАЯ)</h3>
+							<h3 class="product-pay-name">НЕОЛИТ КРИСТАЛЬНО БЕЛАЯ (ГЛЯНЦЕВАЯ)</h3>
 							<div class="modal-content--prices">
 								<div class="modal-content__prices">
 									<p>Нархи:</p>
@@ -127,7 +125,7 @@
 								</div>
 								<div class="modal-content__prices-total">
 									<p>Жами сумма ва сони:	</p>
-									<div> <p class="product__number">0</p> x span> 89 000 </span>сўм</div>
+									<div> <p class="product__number">0</p> x <span class="product-sum__total"> 89 000 </span>сўм</div>
 								</div>
 							</div>
 							<div class="modal-footer">
@@ -154,26 +152,20 @@
 				<div class="main-content__pay">
 					<div class="main-content__pay-name">
 						<span>Номи</span>
-						<ul>
-							<li>Weber Белый 105</li>
-							<li>Weber Красный 107</li>
-							<li>Ralph Richards</li>
-							<li>Bernard Murphy</li>
-						</ul>
+						<span>Нархи</span>
 					</div>
 					<div class="main-content__pay-sum">
-						<span>Нархи</span>
-						<ul>
-							<li><span class="n">1</span> x 89 000</li>
-							<li><span>1</span>х 89 000</li>
-							<li><sapn>1</sapn>х 89 000</li>
-							<li><span>1</span>х 89 000</li>
+						<ul class="product-name-list">
+							<li>
+								<div class="product__name">Weber Белый 105</div>
+								<div class="product-summa"><span>1</span>х <span  class ="product_name_price">89000</span>сўм</div>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="main-content__right-bottom">
 					<div class="product-name">
-						<p>Жами сумма:</p><div><span>356 000</span> сўм</div>
+						<p>Жами сумма:</p><div><span class="product__sum--total">356 000</span> сўм</div>
 					</div>
 					<div class="product-kewpek">
 						<p>Кэшбэк:</p><div><span>35 600</span> сўм</div>
